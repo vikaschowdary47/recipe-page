@@ -1,0 +1,29 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.cake {
+  width: 100%;
+  height: 100%;
+}
+.check-box {
+}
+
+.number {
+  height: 35px;
+  width: 35px;
+  background-color: orangered;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
