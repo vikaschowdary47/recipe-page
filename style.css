@@ -122,13 +122,43 @@ footer {
     font-size: 40px;
     font-weight: bold;
   }
+  .second-title #dot {
+    width: 20px;
+    margin-right: 10px;
+    margin-top: -30px;
+  }
 
   .main-grid {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
+    grid-gap: 0;
   }
-  .main-ingrediants {
+  .section {
     margin-top: 5px;
+  }
+
+  .icon {
+    margin-top: 3px;
+  }
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100px;
+    box-shadow: none;
+  }
+
+  .details {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 3px;
+    padding: 2px;
+  }
+
+  .detail {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
   }
 }
