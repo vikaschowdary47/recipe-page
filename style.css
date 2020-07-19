@@ -6,14 +6,58 @@ html {
 }
 .container {
   width: 80%;
-  margin: 0 auto;
+  height: 100vh;
+  margin: 19px auto;
+}
+.main-title h1 {
+  font-size: 60px;
+  font-weight: bold;
 }
 
+.second-title {
+  margin: 10px 0 20px 0;
+  display: flex;
+}
+.second-title #dot {
+  width: 30px;
+  margin-right: 10px;
+  margin-top: -15px;
+}
 .cake {
   width: 100%;
   height: 100%;
 }
-.check-box {
+.main-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 300px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.main-ingrediants {
+  margin-top: 40px;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+}
+
+label {
+  margin: 8px;
+  padding: 0;
+}
+
+input.check-box {
+  width: 40px;
+  height: 40px;
+}
+
+.instructions {
+  display: grid;
+  grid-gap: 20px;
+  line-height: 1.5rem;
 }
 
 .number {
@@ -26,4 +70,65 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.inst-item {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 30px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.fork {
+  width: 40px;
+  height: 40px;
+}
+
+.card {
+  /* border: 0.5px solid lightgrey; */
+  width: 150px;
+  height: 240px;
+  border-radius: 8px;
+  box-shadow: 2px 2px lightgrey;
+}
+
+.details {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 4px;
+  padding: 10px;
+}
+.detail {
+  display: grid;
+  grid-gap: 2px;
+  font-size: 12px;
+}
+.serve {
+  color: orange;
+}
+
+footer {
+  text-align: center;
+  width: 100%;
+  margin-top: auto;
+  color: gray;
+}
+
+@media only screen and (max-width: 600px) {
+  .main-title h1 {
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .main-grid {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .main-ingrediants {
+    margin-top: 5px;
+  }
 }
